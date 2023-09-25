@@ -5,7 +5,7 @@ on: [push]         # event that will trigger the workflow
 jobs:                   #what jobs do you want to run?
 
     run-shell-command:
-        runs-on: ubuntu-18.04  #ubuntu default
+        runs-on: ubuntu-latest  #ubuntu default
         steps:
             - name: checkout #clones the code u pushed to github on the runner
               uses: actions/checkout@v3  #custom modules that will clone the code 2 d vm's
