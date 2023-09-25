@@ -24,8 +24,8 @@ jobs:                   #what jobs do you want to run?
         runs-on: windows-latest
         needs: ["run-shell-command"]  #run-shell-command must run first (Job depends on run-shell-command)
         steps: 
-                - name: Directory
-                  run: Get-Location                #gives location inside yr vm 
-                - name: Directory bash
-                  run: pwd
-                  shell: bash                  	   #gives location inside yr vm but runs with  shell
+            - name: Directory
+              run: Get-Location                #gives location inside yr vm 
+            - name: Directory bash
+              run: pwd
+              shell: bash                  	   #gives location inside yr vm but runs with  shell
