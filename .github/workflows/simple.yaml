@@ -15,10 +15,6 @@ jobs:                   #what jobs do you want to run?
               run: |
                 node -v
                 npm -v
-            - name: python command
-              run: |
-                import platform
-                shell: python 
     run-windows-commands:
         runs-on: windows-latest
         needs: ["run-shell-command"]  #run-shell-command must run first (Job depends on run-shell-command)
